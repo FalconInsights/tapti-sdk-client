@@ -7,6 +7,10 @@
   "files": [
     "dist/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FalconInsights/tapti-sdk-client-node.git"
+  },
   "homepage": "https://tapti.ai",
   "scripts": {
     "build": "tsup",
