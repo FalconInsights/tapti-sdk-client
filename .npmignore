@@ -1,0 +1,28 @@
+# Source files
+src/
+
+# TypeScript configuration files
+tsconfig.json
+tsconfig.build.json
+
+# ESLint configuration files
+.eslintrc.js
+.eslintignore
+
+# Prettier configuration files
+.prettierrc
+
+# Other configuration files
+.gitattributes
+.gitignore
+
+# Development dependencies and tools
+node_modules/
+./package.json
+./package-lock.json
+
+# Local environment files
+.env
+
+# Cache  directories
+.cache/
