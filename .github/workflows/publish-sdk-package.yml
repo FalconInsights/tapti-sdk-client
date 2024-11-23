@@ -5,16 +5,16 @@ on:
       - main
 
 permissions:
-  contents: read 
+  contents: read
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-      issues: write 
-      pull-requests: write 
+      contents: write
+      issues: write
+      pull-requests: write
       id-token: write
     steps:
       - name: Checkout
@@ -24,13 +24,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures 
+        run: npm audit signatures
+
+      - name: Build
+        run: npm run build
 
       - name: Release
         env:
