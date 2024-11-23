@@ -53,3 +53,4 @@ taptiSDK.connectAccount({ platform: 'youtube' })
     console.error('Error during account connection:', error);
   });
 ```
+
