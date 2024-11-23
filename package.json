@@ -1,6 +1,7 @@
 {
-  "name": "tapti-sdk-client",
+  "name": "tapti-client-sdk",
   "description": "A SDK to use Tapti APIs on Client Side",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/FalconInsights/tapti-sdk-client-node.git"
+    "url": "git+https://github.com/FalconInsights/tapti-sdk-client-node.git"
   },
   "homepage": "https://tapti.ai",
   "scripts": {
