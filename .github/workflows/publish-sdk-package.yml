@@ -27,7 +27,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install -w=tapti-sdk-client
+        run: npm install
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures 
@@ -36,4 +36,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run release -w=tapti-sdk-client
+        run: npm run release
