@@ -2,9 +2,7 @@ export class SDKConfig {
   private static instance: SDKConfig;
   private static accessGatewayBaseUrl: string = 'https://oauth.tapti.ai';
 
-  private constructor() {
-    // Private constructor to prevent direct instantiation
-  }
+  private constructor() {}
 
   public static getInstance(): SDKConfig {
     if (!SDKConfig.instance) {
