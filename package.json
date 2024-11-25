@@ -1,6 +1,7 @@
 {
   "name": "tapti-client-sdk",
   "description": "A SDK to use Tapti APIs on Client Side",
+  "version": "1.0.2",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -15,7 +16,6 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "publish": "npm publish --access public",
     "release": "semantic-release"
   },
   "license": "MIT",
